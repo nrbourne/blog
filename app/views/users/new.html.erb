@@ -1,0 +1,15 @@
+<h1>Sign Up!</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+
+<%= simple_form_for @user, url: signup_path do |f| %>
+  <%= f.input :firstName %>
+  <%= f.input :lastName %>
+  <%= f.input :emailAddr %>
+  <%= f.input :uname %>
+  <%= f.password_field :pword %>
+  <%= f.submit :submit %>
+<% end %>
+
+
+<%= link_to 'Back', root_path %>
+
